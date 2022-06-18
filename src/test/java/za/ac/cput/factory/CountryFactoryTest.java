@@ -6,13 +6,13 @@ class CountryFactoryTest {
     @Test
     public void buildCountry(){
         Country country= CountryFactory.build
-                ("STUDE12365","South Africa");
+                ("STUDE12365","Nigeria");
         System.out.println(country);
         assertNotNull(country);
     }
     @Test void notPassed(){
         Exception exception= assertThrows
-                ((IllegalArgumentException.class),()->CountryFactory.build(null,"South Africa"));
+                ((IllegalArgumentException.class),()->CountryFactory.build(null,"Nigeria"));
         String exceptionMessage = exception.getMessage();
         System.out.println
                 (exceptionMessage);
