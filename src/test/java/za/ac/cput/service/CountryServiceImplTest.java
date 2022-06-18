@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class CountryServiceImplTest {
     public final Country country= CountryFactory
-            .build("test-Id", "South Africa");
+            .build("STUD2365", "Nigeria");
     public Country.CountryId countryIdentity = CountryFactory.build(this.country);
     @Autowired
     public CountryService service;
